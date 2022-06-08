@@ -1,9 +1,10 @@
 import React from "react";
+import Navigation from "./routers/Navigation";
 
 export default function App() {
   return (
     <>
-      <h1>App.tsx</h1>
+      <Navigation />
     </>
   );
 }
