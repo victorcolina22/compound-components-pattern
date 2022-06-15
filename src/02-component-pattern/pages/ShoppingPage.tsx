@@ -24,16 +24,22 @@ export default function ShoppingPage() {
           flexWrap: "wrap",
         }}
       >
-        <ProductCard product={product}>
-          <ProductImage />
-          <ProductTitle title="" />
-          <ProductButtons />
+        <ProductCard product={product} className="bg-dark text-white">
+          <ProductCard.Image className="custom-image" />
+          <ProductCard.Title />
+          <ProductCard.Buttons className="custom-buttons" />
         </ProductCard>
 
-        <ProductCard product={product}>
-          <ProductCard.Image />
-          <ProductCard.Title title="" />
-          <ProductCard.Buttons />
+        <ProductCard product={product} className="bg-dark text-white">
+          <ProductImage className="custom-image" />
+          <ProductTitle />
+          <ProductButtons className="custom-buttons" />
+        </ProductCard>
+
+        <ProductCard product={product} style={{ backgroundColor: "steelblue" }}>
+          <ProductImage style={{ borderRadius: "20px" }} />
+          <ProductTitle style={{ color: "white" }} />
+          <ProductButtons style={{ color: "white" }} />
         </ProductCard>
       </div>
     </div>
