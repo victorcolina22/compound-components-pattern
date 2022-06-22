@@ -16,3 +16,9 @@
   border-color: white;
   color: white;
 }
+
+.shopping-cart {
+  position: fixed;
+  top: 10px;
+  right: 0;
+}
